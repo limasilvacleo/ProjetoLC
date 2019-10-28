@@ -1,0 +1,70 @@
+CREATE DATABASE ProjetoDS;
+
+USE ProjetoDS;
+
+CREATE TABLE Pessoa (
+idPessoa INT PRIMARY KEY IDENTITY(1,1),
+nome VARCHAR(200) NOT NULL,
+email VARCHAR(150) NOT NULL,
+userName VARCHAR(100) NOT NULL,
+senha VARCHAR(100) NOT NULL,
+cargo VARCHAR(50) NOT NULL,
+dtNascimento DATE NOT NULL,
+sexo VARCHAR(15) NOT NULL,
+telFixo VARCHAR(10) NULL,
+telCelular VARCHAR(11) NULL,
+ativo varchar DEFAULT 'ativo',
+RG VARCHAR(25) NOT NULL,
+CPF VARCHAR(11) NOT NULL);
+
+
+
+insert into Pessoa (
+nome,
+email,
+userName ,
+senha ,
+cargo ,
+dtNascimento,
+sexo ,
+telFixo,
+telCelular,
+ativo,
+RG ,
+CPF  
+
+) 
+values ('cleonice lima',
+'cleonice@aluna', 
+'cleo', 
+'123456',
+'adm',
+'1977-08-17',
+'feminino',
+'1123456789',
+'11987654321',
+'ativo',
+'21456879',
+'12345678932'
+);
+select * from Pessoa;
+
+
+CREATE TABLE Produto (
+idProd INT PRIMARY KEY IDENTITY(1,1),
+codBarra INT(13) NOT NULL,
+loteProd VARCHAR()NOT NULL,
+valProd DATE NULL,
+nomeProd VARCHAR(200) NOT NULL,
+descProd VARCHAR(200) NOT NULL,
+qtdProd VARCHAR(4) NOT NULL,
+precoProd FLOAT(10) NOT NULL,
+medProd VARCHAR(10) NOT NULL);
+
+
+
+
+
+
+
+
